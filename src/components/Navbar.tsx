@@ -8,6 +8,7 @@ export default function Navbar() {
   const homeScrolled = isHome && isScrolled;
   const nonHomeScrolled = !isHome && isScrolled;
   const [wordmarkOk, setWordmarkOk] = useState(true);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   // Force re-check image loading when src changes
   useEffect(() => {
@@ -20,6 +21,10 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location.pathname]);
 
   const navItems = [
     { name: '首页', path: '/' },
@@ -59,11 +64,43 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Menu Button - Simplified for now */}
-        <div className={`md:hidden ${homeScrolled ? 'text-white' : 'text-gold'}`}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-        </div>
+        <button
+          type="button"
+          aria-label="打开菜单"
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen(v => !v)}
+          className={`md:hidden ${homeScrolled ? 'text-white' : 'text-gold'}`}
+        >
+          {mobileOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+          )}
+        </button>
       </div>
+
+      {mobileOpen && (
+        <div className={`md:hidden border-t ${homeScrolled ? 'border-white/20 bg-gold/85 backdrop-blur-md' : 'border-gold/10 bg-white/95 backdrop-blur-md'}`}>
+          <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-5">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`uppercase text-xs tracking-widest transition-colors ${homeScrolled ? 'text-white hover:text-white/80' : location.pathname === item.path ? 'text-gold font-bold' : 'text-zinc-500 hover:text-gold'}`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
