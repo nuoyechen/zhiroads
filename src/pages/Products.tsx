@@ -190,9 +190,9 @@ const PRODUCTS = [
     category: '杯具', 
     name: 'Zhiroads不锈钢保温杯', 
     price: 218, 
-    colors: ['酒红色', '粉色', '玫红色', '黄色', '黑色', '墨绿色', '金色'], 
+    colors: ['橙色', '粉色', '玫红色', '黄色', '黑色', '墨绿色', '金色'], 
     images: {
-      '酒红色': ['/images/products/p13_wine_1.jpg'],
+      '橙色': ['/images/products/p13_wine_1.jpg'],
       '粉色': ['/images/products/p13_pink_1.jpg'],
       '玫红色': ['/images/products/p13_rose_1.jpg'],
       '黄色': ['/images/products/p13_yellow_1.jpg'],
@@ -209,9 +209,9 @@ const PRODUCTS = [
     category: '杯具', 
     name: 'Zhiroads 陶瓷马克杯', 
     price: 98, 
-    colors: ['酒红色', '粉色', '黄色', '黑色', '墨绿色'], 
+    colors: ['橙色', '粉色', '黄色', '黑色', '墨绿色'], 
     images: {
-      '酒红色': ['/images/products/p14_wine_1.jpg'],
+      '橙色': ['/images/products/p14_wine_1.jpg'],
       '粉色': ['/images/products/p14_pink_1.jpg'],
       '黄色': ['/images/products/p14_yellow_1.jpg'],
       '黑色': ['/images/products/p14_black_1.jpg'],

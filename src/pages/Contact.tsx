@@ -22,8 +22,8 @@ export default function Contact() {
                <div className="w-12 h-12 bg-gold text-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-gold/20">
                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                </div>
-               <h3 className="font-bold text-gold mb-2">工厂/办公地址</h3>
-               <p className="text-xs text-zinc-500 mb-6">XXXX省XXXX市XXXX区XXXX路XXXX号</p>
+               <h3 className="font-bold text-gold mb-2">办公室地址</h3>
+               <p className="text-xs text-zinc-500 mb-6">浙江省杭州市余杭区良渚街道杭行路1499号</p>
                <button className="gold-button scale-75">开启导航</button>
             </div>
             

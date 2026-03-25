@@ -23,15 +23,8 @@ export default function Custom() {
               如果您喜欢 Zhiroads 的产品，可根据自身需求，将产品更换为您专属的 logo（个人 logo、企业 logo 均可），无论是个人使用、节日送礼，还是企业定制、员工福利，我们都能为您提供专属解决方案，保留产品本身的耐用、环保特质，让每一件好物都带有专属印记。
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-             <div className="bg-zinc-50 aspect-square flex flex-col items-center justify-center p-4">
-               <div className="w-12 h-12 border border-gold/20 rounded-full mb-2 flex items-center justify-center text-gold/30">LOGO</div>
-               <span className="text-[10px] text-zinc-400 uppercase tracking-widest">个人定制示例</span>
-             </div>
-             <div className="bg-zinc-50 aspect-square flex flex-col items-center justify-center p-4">
-               <div className="w-16 h-8 bg-gold/10 mb-2 flex items-center justify-center text-gold/30">CORP</div>
-               <span className="text-[10px] text-zinc-400 uppercase tracking-widest">企业定制示例</span>
-             </div>
+          <div className="bg-zinc-50 aspect-video overflow-hidden">
+            <img src="/images/custom/custom.jpg" alt="定制示例" className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -82,8 +75,8 @@ export default function Custom() {
           <div className="bg-zinc-50 p-12 text-center">
              <h3 className="text-xl font-bold mb-8">立即开启定制</h3>
              <div className="space-y-4">
-               <button className="gold-button w-full">在线咨询</button>
-               <Link to="/contact" className="outline-button w-full block text-center">联系客服</Link>
+               <button className="gold-button w-full">开启定制</button>
+               <Link to="/contact" className="outline-button w-full block text-center">联系我们</Link>
              </div>
              <p className="mt-8 text-[10px] text-zinc-400 tracking-widest uppercase">
                定制起订量：10件起（个人定制可协商）<br/>

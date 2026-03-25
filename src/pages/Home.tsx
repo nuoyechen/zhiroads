@@ -61,7 +61,7 @@ export default function Home() {
               探索好物
             </Link>
             <Link to="/about" className="outline-button w-full sm:w-auto">
-              品牌故事
+              关于我们
             </Link>
           </div>
         </motion.div>
