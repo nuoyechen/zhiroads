@@ -48,21 +48,21 @@ export default function Contact() {
                   <span className="text-gold">📞</span>
                   <div>
                     <p className="font-bold">咨询电话</p>
-                    <p className="text-zinc-500">XXX-XXXXXXX (9:00-18:00)</p>
+                    <p className="text-zinc-500">13345711125 (9:00-18:00)</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <span className="text-gold">💬</span>
                   <div>
                     <p className="font-bold">微信咨询</p>
-                    <p className="text-zinc-500">Zhiroads_Support (备注“咨询”)</p>
+                    <p className="text-zinc-500">13345711125（备注Zhiroads产品咨询）</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <span className="text-gold">✉️</span>
                   <div>
                     <p className="font-bold">邮箱咨询</p>
-                    <p className="text-zinc-500">contact@zhiroads.com</p>
+                    <p className="text-zinc-500">mail@initipack.com</p>
                   </div>
                 </div>
               </div>
@@ -72,14 +72,9 @@ export default function Contact() {
               <h2 className="text-xl font-bold text-gold mb-6 border-b border-gold/10 pb-2 inline-block">线下门店</h2>
               <div className="space-y-8">
                 <div>
-                  <p className="font-bold text-sm mb-1">Zhiroads 旗舰店 (XX商场店)</p>
-                  <p className="text-zinc-500 text-xs mb-1">地址：XXXX省XXXX市XXXX区XXXX路XXXX号</p>
-                  <p className="text-zinc-400 text-[10px] uppercase tracking-widest">营业时间：9:30-21:00 · 电话：XXX-XXXXXXX</p>
-                </div>
-                <div>
-                  <p className="font-bold text-sm mb-1">Zhiroads 概念店 (XX创意园区店)</p>
-                  <p className="text-zinc-500 text-xs mb-1">地址：XXXX省XXXX市XXXX区XXXX路XXXX号</p>
-                  <p className="text-zinc-400 text-[10px] uppercase tracking-widest">营业时间：10:00-20:00 · 电话：XXX-XXXXXXX</p>
+                  <p className="font-bold text-sm mb-1">Zhiroads专柜（杭州万象城)</p>
+                  <p className="text-zinc-500 text-xs mb-1">地址：浙江省杭州市上城区富春路701号杭州万象城</p>
+                  <p className="text-zinc-400 text-[10px] uppercase tracking-widest">营业时间：9:30-21:00 · 电话：13345711125</p>
                 </div>
               </div>
             </div>
